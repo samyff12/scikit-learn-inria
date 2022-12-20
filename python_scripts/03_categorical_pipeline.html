@@ -45,8 +45,8 @@
     <script src="../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="../_static/matomo.js"></script>
     <script src="../_static/sklearn_mooc.js"></script>
+    <script src="../_static/matomo.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -2712,10 +2712,10 @@ sure that:</p>
 <ul class="simple">
 <li><p>the original categories (before encoding) have an ordering;</p></li>
 <li><p>the encoded categories follow the same ordering than the original
-categories.
-The <strong>next exercise</strong> highlights the issue of misusing <code class="docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code> with
-a linear model.</p></li>
+categories.</p></li>
 </ul>
+<p>The <strong>next exercise</strong> shows what can happen when using an <code class="docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code>
+with a liner model and the conditions above are not met.</p>
 <p>One-hot encoding categorical variables with high cardinality can cause
 computational inefficiency in tree-based models. Because of this, it is not recommended
 to use <code class="docutils literal notranslate"><span class="pre">OneHotEncoder</span></code> in such cases even if the original categories do not
